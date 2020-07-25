@@ -300,17 +300,25 @@
             <h2>Who is using it?</h2>
             <ul>
                 <li>GitLab</li>
+                <li>Google</li>
+                <li>Adobe</li>
+                <li>BMW</li>
+                <li>Namecheap</li>
+                <li>Apple</li>
                 <li>NativeScript</li>
                 <li>Weex</li>
+                <li>Louis Vuitton</li>
                 <li>Baidu</li>
             </ul>
+            <br/>
+            Reference: 
+            <a href="https://madewithvuejs.com/blog/enterprises-you-didnt-know-were-using-vue-js">
+              https://madewithvuejs.com/blog/enterprises-you-didnt-know-were-using-vue-js
+            </a> 
         </section>
         <section>
             <section>
                 <h2>How it works?</h2>
-            </section>
-            <section data-background-color="#ffffff">
-                <img src="static/images/MVVM.png" alt="">
             </section>
             <section data-background-color="#ffffff">
                 <h2>Components</h2>
@@ -389,28 +397,7 @@
         </section>
         <section>
             <section>
-                <h2>Computed Properties and Watchers</h2>
-            </section>
-            <section data-background-color="#ffffff">
-                <h2>Watch</h2>
-                <pre class="code"><code class="lang-javascript">
-var vm = new Vue({
-  el: '#demo',
-  data: {
-    firstName: 'Foo',
-    lastName: 'Bar',
-    fullName: 'Foo Bar'
-  },
-  watch: {
-    firstName: function (val) {
-      this.fullName = val + ' ' + this.lastName
-    },
-    lastName: function (val) {
-      this.fullName = this.firstName + ' ' + val
-    }
-  }
-})
-                </code></pre>
+                <h2>Computed Properties</h2>
             </section>
             <section data-background-color="#ffffff">
                 <h2>Computed</h2>
@@ -430,27 +417,6 @@ var vm = new Vue({
     }
   }
 })
-            </code></pre>
-            </section>
-            <section data-background-color="#ffffff">
-                <h2>Computed Setter</h2>
-                <pre class="code"><code class="lang-javascript">
-//...
-computed: {
-  fullName: {
-    // getter
-    get: function () {
-      return this.firstName + ' ' + this.lastName
-    },
-    // setter
-    set: function (newValue) {
-      var names = newValue.split(' ')
-      this.firstName = names[0]
-      this.lastName = names[names.length - 1]
-    }
-  }
-}
-//...
             </code></pre>
             </section>
         </section>
